@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+   <title>Info Page</title>
+   <link href="./InfoPage.css" rel="stylesheet">
+   <script defer src="./validation.js"> </script>
+</head>
+<body>
+   <div class="container">
+	<header>
+		<h1 style="font-size: 40px; color: greenyellow;">Geek Fam |  <img src="./images/download.jpg" id='logo' alt=""></h1> 
+	   </header>
+
+
+      <aside>
+		<nav>
+			<ul>
+				<li> <a href="HomePage.html" target="_blank"> Home</a> </li>
+				<li> <a href="ProductsPage.html" target="_blank"> Products</a> </li>
+				<li> <a href="InfoPage.html" target="_blank"> Info</a> </li>
+			   <li> <a href="Honesty.html" target="_blank">Honesty</a> </li>
+         	</ul>
+		 </nav>
+      </aside>
+
+
+      <section class="main">
+        <div id = "creatAcc">
+			<h3 id = "createAccHead">Create Your Account</h3>
+
+				<!-- <form id = "signup" method="post"   action="https://httpbin.org/post"> -->
+					<form id = "signup" method="post"   action="https://httpbin.org/post"   onsubmit = 'return formValid();'>
+				
+					<h4 id = "reqInfoHead">*Required Information</h4>
+
+					<h3 class = "Div_Title">Basic Information</h3>
+					<div id = "basicInfo">
+	
+						<div id="FirstName">
+							<label> First Name<b>*</b></label> <input type="text" name="firstName" id = "firstName" required pattern="[A-Z][A-Za-z]*$" title="Must start with caps and only alphabet allowed.">
+						</div> 
+
+						<div id="LastName">
+							<label> Last Name<b>*</b></label> <input type="text" name="lastName" id = "lastName" required pattern="[A-Z][A-Za-z]*$" title="Must start with caps and only alphabet allowed.">
+						</div> 
+
+						<div id="Password">
+							<label>Password<b>*</b></label> <input type = "password" name = "password" id = "password" required title="Must be at least 6 characters long, with at least 1 digit, 1 uppercase & 1 special character. Special characters allowed: #@$!%*?&"  minlength="6" onchange = "checkPassword('pass')">
+						</div>
+
+						<!-- onchange = "checkPassword('password')" -->
+
+						<div id="RetypePassword">
+							<label>Retype Password<b>*</b></label> <input type = "password" name = "rePassword" id = "rePassword"  required title="Must be at least 6 characters long, with at least 1 digit, 1 uppercase & 1 special character. Special characters allowed: #@$!%*?&" minlength="6"  onchange = "checkPassword('re')">
+						</div> 
+
+						<!-- onchange = "checkPassword('rePassword')" -->
+
+						<div id="Username">
+							<label>Username<b>*</b></label> <input type = "text" name = "username" id = "username" required title="Must start with a letter and be at least 6 characters long." minlength="6" onchange = "checkUsername('undefined')">
+						</div> 
+						
+						<!-- onchange = "checkUsername('username')" -->
+						
+						<div id="Address">
+							<label>Address<b>*</b></label> <input type="text" name="address" required>
+						</div>
+
+						<div> <label>Province<b>*</b></label> 
+	
+							<select name = "Province" required>
+								<option value = "">--select--</option>
+								<option value = "AL">Alberta</option>
+								<option value = "ON">Ontario</option>
+								<option value = "BC">British Columbia</option>
+								<option value = "QC"> Quebec</option>
+								<option value = "NS"> Nova Scotia</option>
+								<option value = "NB">New Brunswick</option>
+								<option value = "MB">Manitoba</option>
+								<option value = "SK"> Saskatchewan</option>
+								<option value = "NL">Newfoundland And Labrador</option>
+								<option value= "PEI">Prince Edward Island</option>
+							</select> 
+
+						</div>
+
+						<div id = "radioButton">
+                        
+							<label id="labelGender">Gender<b>*</b></label>  
+						<ul>
+						   <li> <input type = "radio" name = "gender" value = "male" required> <label>Male</label></li>
+
+						   <li> <input type = "radio" name = "gender" value = "female" required>  <label>Female</label></li>
+
+						   <li><input type = "radio" name = "gender" value = "notPrefer" required>  <label>Prefer not to share</label></li>
+						</ul>
+
+						</div>
+
+						<div> 
+							<label>Email<b>*</b></label> <input type="email" name="email" required placeholder="abc@email.com" title="Input your email address."> 
+						</div>
+
+						<div> 
+							<label>Age<b>*</b></label> <input type="text" name="age" required pattern="[1][8-9]|[2]\d|[3]\d|[4]\d|[5]\d|[6][0]" placeholder="Only 18-60 allowed" title="Enter a number between 18 and 60."> 
+						</div>
+						
+						<div id= "button">
+							<input type="reset">
+							<input type="submit" value="Submit">
+						</div>
+
+						<input type="hidden" name="name" id="name" value="Soham Thaker" />
+						<input type="hidden" name="studentId" id="studentId" value="011-748-159" />
+
+					</div>
+				</form>
+		</div>
+      </section>
+
+	  <section class="ads">
+	   <h3 id = "errorHead">The is the error section</h3>
+        <p id = "errorList"></p>
+	  </section>
+
+
+      <footer>
+		<h1>&copy; Geek Fam</h1>
+      </footer>
+
+
+   </div>
+</body></html>

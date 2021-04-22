@@ -1,0 +1,109 @@
+body{
+    background-color: #97caef;
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #001f24;
+    padding:5px 25px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+nav{
+    overflow: hidden;
+    padding: 8px;
+    background-color: #3D3D3D;
+    border-radius: 10px;
+}
+
+nav ul{
+    list-style-type: none;
+    padding-left:20px;
+    margin:0px;
+}
+
+nav ul li{
+    display: block;
+    background-color: #3D3D3D;
+}
+
+nav ul li a{
+    background-color: #3D3D3D;
+    color: white;
+    text-decoration: none;
+    padding:0 5px;	
+    font-weight:bold;
+    font-size:25px;
+    font-family: monospace;
+}
+
+nav ul li a:hover{
+    color: rgb(33, 176, 233);
+}
+
+nav ul li a:active{
+    color: green;
+}
+
+#ad{
+    width: auto;
+    float: left;
+    margin-right:20px;
+}
+
+.main{
+    float:left;
+    width: 85%;
+    padding-bottom:10px;
+    margin-right:10px;
+    margin-bottom: 10px;
+}
+
+.info{
+background-color: #EDE4DF;
+border-radius: 10px;
+padding: 10px;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer{
+    clear:both;
+    color: greenyellow;
+    background-color: #001f24;
+    padding:5px 25px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    text-align: center;	
+}
+
+#img{
+    padding: 2px;
+    width: 200px;
+}
+
+#logo{
+    height: auto; 
+    width: 125px;
+}
+
+p{
+    font-size: 20px;
+}
+
+#anchor1, #anchor2{
+    text-decoration: none;
+}
+
+#anchor1:visited, #anchor2:visited{
+    color: rgba(8, 112, 247, 0.418);
+}
+
+#anchor1:hover, #anchor2:hover{
+    color:blue;
+}

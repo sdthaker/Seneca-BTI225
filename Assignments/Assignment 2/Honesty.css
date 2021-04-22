@@ -1,0 +1,61 @@
+body{
+    background-color: #E1F8DC;
+}
+
+#ad{
+    width: auto;
+    float: left;
+    padding: 60px 40px 0px 40px;
+    margin: 0px 75px;
+}
+
+nav{
+    overflow: hidden;
+    padding: 8px;
+    background-color: #3D3D3D;
+    border-radius: 10px;
+}
+
+nav ul{
+    list-style-type: none;
+    padding-left:20px;
+    margin:0px;
+}
+
+nav ul li{
+    display: block;
+    background-color: #3D3D3D;
+}
+
+nav ul li a{
+    background-color: #3D3D3D;
+    color: white;
+    text-decoration: none;
+    padding:0 5px;	
+    font-weight:bold;
+    font-size:25px;
+    font-family: monospace;
+}
+
+nav ul li a:hover{
+    color: rgb(33, 176, 233);
+}
+
+nav ul li a:active{
+    color: green;
+}
+
+.main{
+    float: left;
+    padding: 60px 40px 0px 40px;
+    margin: 0px 200px 75px 250px;
+    position: absolute;
+}
+
+#content{
+    background-color: steelblue;
+    padding: 5px 15px;
+    font-family:monospace;
+    border-radius: 10px;
+    font-size: 18px;
+}
