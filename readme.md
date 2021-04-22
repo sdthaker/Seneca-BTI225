@@ -2,4 +2,4 @@
 
 - HTML5
 - CSS3
-- JS (Client-Side Validation, Forms)
+- JS : Client-Side Validation, Forms, DOM manipulation
