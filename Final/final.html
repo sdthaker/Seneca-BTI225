@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Final Exam</title>
+        <meta charset="UTF-8" />
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <script src="final.js"></script>
+        <link rel="stylesheet" href="final.css">
+    </head>
+
+    <body>
+        <h2>Declaration:</h2>
+            <p>I declare that this test is my own work in accordance with Seneca Academic Policy. No part of this work has been copied manually or electronically from any other source (including 3rd party web site) or distributed to other students. I acknowledge that by beginning this test, I will abide by the above.</p>
+
+        <span><b>Name: </b><u>Soham Thaker</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Student Number: </b><u>011-748-159</u></span> <hr>
+
+        <h2>Course Information</h2>
+
+        <form id='signup' method='post' action='https://httpbin.org/post' onsubmit = "return valid();">
+
+            <input type='text' placeholder='Enter a course code.' id='courseCode' name="CourseCode">
+            <input type="button" value="Search by Course Code" onclick="search();"> 
+            <input id= 'clearS' type="button" value="Clear Search Result" onclick="clearSearch();">
+            <table id='tbl'></table>
+
+            <fieldset> <legend>Course Registration</legend>
+
+            <label>Program: </label><input type='text' id='program' readonly name="Program">
+            <script>
+                 document.getElementById('program').defaultValue = 'BSD';
+            </script>
+           
+           <br>
+           <label><b id='b1'>*</b>Student Name: </label><input required type='text' id='name' placeholder="Enter name including only alphabet, apostrophe, and space." size='50' onchange="check(true);" name="StudentName">          
+           
+            <span id='sName'></span>
+
+            <br>
+           <label><b id='b2'>*</b>Student Number: </label><input required type='number' id='number' min="210000" max='219999' name="StudentNumber">
+
+            <br>
+           <label>Semester:</label>
+           <input type="radio" name='Semester' value='Winter' id='W'><label for='W' id='Wi'>Winter</label>
+           <input type="radio" name='Semester' value='Summer' id='S'><label for='S' id='Su'>Summer</label>
+           <input type="radio" name='Semester' value='Fall' id='F'><label for='F' id='Fa'>Fall</label>
+
+
+           <br>
+           <label>Courses: </label>
+           <select name = "Courses" id="courses" multiple size='3'>
+            <option value = "BTP100">BTP100</option>
+            <option selected = "selected" value = "BTI225">BTI225</option>
+            <option value = "BTI325">BTI325</option>
+            <option value = "BTI425">BTI425</option>
+           </select>
+
+           <br>
+          <label>Note: </label><textarea id='textArea' maxlength="30" rows="2" name="Note"></textarea>
+            
+           <br><input type="submit" value = "Register">
+           <input type="reset" value = "Reset" onclick="check(false);">
+           <br><span id='span'></span>
+        
+          </fieldset>
+        </form>
+
+        <mark>
+            <script> var dt=new Date(document.lastModified);
+            document.write('This page was last updated on ' + dt.toLocaleString()) ;
+            </script>
+        </mark>
+    </body>
+</html>

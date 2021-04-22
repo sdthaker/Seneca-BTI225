@@ -1,0 +1,35 @@
+body{
+    width:70%;
+    margin: auto;
+    background-color: rgb(252, 252, 249);
+    padding: 1em 2em;
+    border: purple 1px solid;
+    font-family: sans-serif;
+}
+
+label{
+    width: 5em;
+    padding: 0px 0.5em;
+    text-align: right; 
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+#Wi, #Su, #Fa{
+    margin: -7.5px;
+    display: inline;
+}
+
+#b1, #b2{
+    color: red;
+}
+
+td, th{
+    border: blue 2px solid
+}
+
+fieldset{
+    margin-top: 30px;
+    background-color: bisque; 
+    color: blue;
+}
